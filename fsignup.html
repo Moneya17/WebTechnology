@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <form action="#" method="get">
+  <head>
+    <h1><center>Sign Up</center></h1>
+	<h3><center>It's free and always will be</center></h3>
+  </head>
+  <body>
+    <table align="center">
+	 <tr>
+	   <td><input type="text" placeholder="first name" size="22"></td>
+	   <td><input type="text" placeholder="last name"></td>
+	 </tr>
+	 <tr>
+	   <td colspan="2"><input type="text" placeholder="email" size="55"></td>
+	 </tr>
+	 <tr>
+	   <td colspan="2"><input type="text" placeholder="re-enter email" size="55"></td>
+	 </tr>
+	 <tr>
+	   <td colspan="2"><input type="password" placeholder="new password" size="55"></td>
+	 </tr>
+	 <tr>
+	  <td><h3>Birthday:</h3></td>
+	 </tr>
+	 <tr>
+	   <td>
+	  <select name="months">
+       <option>January</option>
+       <option>February</option>
+       <option>March</option>
+       <option>April</option>
+	   <option>May</option>
+       <option>June</option>
+       <option>July</option>
+       <option>August</option>
+	   <option>September</option>
+       <option>October</option>
+       <option>November</option>
+       <option>December</option>
+      </select> 
+	  
+		<select name = "date">
+    	 <option>Date</option>
+    	  <?php
+    		for($date = 1; $date <= 31; $date++)
+    		echo"<option>".$date."</option>";
+    	   ?>
+		</select>
+	  
+	    <select name = "year">
+    	 <option>Year</option>
+    	  <?php
+    		for($year = 1960; $year <= 2018; $year++)
+    		echo"<option>".$year."</option>";
+    	   ?>
+		</select>
+	   </td>
+	   <td>
+	    <p>Why do i need to provide my</br>
+		birthday?</p>
+	   </td>
+	  </tr>
+	   </br>
+	  <tr>
+	   <td><input type="radio" name="gen">Female
+	   <input type="radio" name="gen">Male</td>
+	  </tr>
+	  <tr>
+	   <td colspan="2">
+	    <p>By clicking Sign Up, you agree to our Terms and that you</br>
+		have read our Data Use Policy,including our cookie use.
+		</p>
+	   </td>
+	  </tr>
+	  <tr>
+	   <td>
+	   <input type="submit" value="Sign Up" style="background-color:#2ed00e">
+	   </td>
+	  </tr>
+	</table>
+  </body>
+ </form>
+</html>
